@@ -1,3 +1,5 @@
+# Copyright 2020 Bella Rose
+
 CollegeAdmission: CollegeAdmissions.o CollegeApplicant.o
 	g++ -Wall -g -std=c++11 -o CollegeAdmissions CollegeAdmissions.o CollegeApplicant.o
 
