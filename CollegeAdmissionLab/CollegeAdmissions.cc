@@ -1,4 +1,6 @@
 /**
+ * Copyright 2019 Bella Rose
+ *
  * Client Porgram for CollegeApplicant class
  **/
 
