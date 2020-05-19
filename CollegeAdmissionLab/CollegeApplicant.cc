@@ -1,3 +1,7 @@
+/**
+ * Copyright 2019 Bella Rose
+ */
+
 #include <stdlib.h>
 #include <iostream>
 #include <string>

@@ -1,6 +1,8 @@
 /**
- *  definition of College Applicant Class
- **/
+ * Copyright 2019 Bella Rose
+ * 
+ * definition of College Applicant Class
+ */
 
 #include <stdlib.h>
 #include <iostream>

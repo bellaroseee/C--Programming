@@ -2,7 +2,7 @@
  * Copyright 2019 Bella Rose
  *
  * Client Porgram for CollegeApplicant class
- **/
+ */
 
 #include <cstdlib>
 #include <iostream>
