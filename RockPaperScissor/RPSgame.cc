@@ -1,6 +1,8 @@
 /**
  * Copyright 2019 Bella Rose
  * 
+ * An interactive Rock Paper Scissor game
+ * where the user plays against computer
  */
 
 #include <iostream>
@@ -8,7 +10,6 @@
 #include <exception>
 #include <cstdlib>
 #include <ctime>
-#include "RPS.h"
 
 enum class RPS {ROCK='r', PAPER='p', SCISSORS='s'};
 
@@ -43,6 +44,7 @@ int main(int argc, char **argv) {
     gameResults(round , i, j);
 }
 
+// get the user input
 RPS getHumanChoice() {
     string s;
     char c;
@@ -61,6 +63,7 @@ RPS getHumanChoice() {
     return t;
 }
 
+// determine the computer choice
 RPS getComputerChoice() {
     static bool firstTime = true;
     int r;
@@ -89,6 +92,7 @@ void displayChoice(string s, RPS t) {
     }
 }
 
+// determines the result of the current round
 void roundResults(RPS h, int &i, RPS c, int &j) {
     switch(h)
     {
@@ -151,6 +155,7 @@ void roundResults(RPS h, int &i, RPS c, int &j) {
     }
 }
 
+// determines the result of the game
 void gameResults(int round, int i, int j) {
     string winner = "";
     double percent = 0.0;
