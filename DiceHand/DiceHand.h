@@ -1,5 +1,7 @@
 /**
  * Copyright 2019 Bella Rose
+ * 
+ * a DiceHand object of a certain ID with a certain size 
  */
 
 #ifndef DICEHAND_H
@@ -25,17 +27,27 @@ public:
     DiceHand(const DiceHand &);             // copy constructor
     ~DiceHand();                            // default destructor
 
-    const int getHandSize();                // accessor
-    const int getHandID();                  // accessor
+    // returns the size of hand
+    const int getHandSize();
+    // returns the ID of hand
+    const int getHandID();
+    // returns the hand value at index
     int at(int index);
+    // returns the hand
     int *getHand();
+    // prints ouf the hand
     void showHand();
 
+    // rolls the dixe
     void rollDice();
+    // re rolls the dice
     void reroll(int index);
+    // set the size of the hand
     void setSize(int newSize);
 
+    // counts the face value of the hand
     int *faceCounts();
+    // comparing 2 dicehand object
     int compare(DiceHand &);
 
     DiceHand & operator=(const DiceHand &); // override assignment operator

@@ -1,5 +1,7 @@
 /**
  * Copyright 2019 Bella Rose
+ * 
+ * implements DiceHand.h
  */
 
 #include <cstdlib>
@@ -92,7 +94,6 @@ void DiceHand::setSize(int newSize) {
     rollDice();
 }
 
-// how to free this?
 int* DiceHand::getHand() {
     int *copy = new int [this->handSize];
     int i;
